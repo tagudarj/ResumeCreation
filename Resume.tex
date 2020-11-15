@@ -1,0 +1,232 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Jessica Tagudar}{}
+
+\position{Research Administration Graduate Assistant}
+\address{Grand Rapids, Michigan}
+
+\mobile{269-408-6153}
+\email{\href{mailto:tagudarjessica@gmail.com}{\nolinkurl{tagudarjessica@gmail.com}}}
+\github{tagudarj}
+\linkedin{jessica-tagudar-a10938179}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {November, 2020}
+    {Jessica Tagudar~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cventries}
+    \cventry{BS in Allied Health Sciences}{Grand Valley State University}{Allendale, MI}{Aug. 2017 - April 2020}{\begin{cvitems}
+\item Major: Allied Health Sciences; Minor: Applied Statistics
+\item Overall GPA: 3.4
+\item Applied Statistics GPA: 3.9
+\item Dean’s List: 2019, 2020
+\item Related Coursework: Statistical Quality Control, Intermediate Applied Statistics, Design of Experiments, Introduction to Biostatistics, Regression Analysis, Statistical Computing, Introduction to Health Care Research
+\end{cvitems}}
+    \cventry{MS in Biostatistics}{Grand Valley State University}{Grand Rapids, MI}{Aug. 2020 - Present}{\begin{cvitems}
+\item Expected Graduation: April 2022
+\item Related Coursework: R Programming, Bioinformatics, Applied Statistics for Health Professions
+\item Interests: Biostatistics, Data Analytics, Research, Epidemiology
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{relevant-skills}{%
+\section{Relevant Skills}\label{relevant-skills}}
+
+\footnotesize
+
+I developed a variety of skills through coursework and work experience.
+
+\begin{cvhonors}
+    \cvhonor{}{SAS}{ }{ }
+    \cvhonor{}{R Studio}{ }{ }
+    \cvhonor{}{SPSS}{ }{ }
+    \cvhonor{}{JMP Pro 14}{ }{ }
+    \cvhonor{}{Proficient in Microsoft programs, specifically Excel tools such as Pivot Tables}{ }{ }
+    \cvhonor{}{Data collection and data transferring to/from various software}{ }{ }
+    \cvhonor{}{Data software such as Cayuse and Streamlyne}{ }{ }
+    \cvhonor{}{Phlebotomy Technician Certified}{ }{ }
+\end{cvhonors}
+
+\hypertarget{work-experience}{%
+\section{Work Experience}\label{work-experience}}
+
+\begin{cventries}
+    \cventry{Resesarch Administrtion Graduate Assistant}{Center for Scholarly and Creative Excellence - GVSU}{Allendale, MI}{Aug 2020 - Present}{\begin{cvitems}
+\item COVID-19 Research
+\item Managing COVID-19 Testing Facility
+\item Assist with Office of Sponsored Programs with monitoring contracts and other duties
+\end{cvitems}}
+    \cventry{Resesarch Administrtion Student Assistant}{Center for Scholarly and Creative Excellence - GVSU}{Allendale, MI}{November 2018 - April 2020}{\begin{cvitems}
+\item Collected and converted data to and from various databases
+\item Data analyzing and data cleaning
+\item Prepared the company for a new software launch by organizing research projects from 2011 to 2020
+\item Ensured that finished research projects contain all of their necessary documents to secure their completion – such as budget forms and fully executed contracts
+\item Attended conference calls to stay on track with other companies for the launch of our new software
+\item Prepared learning modules directed toward faculty and staff to learn about the new software
+\end{cvitems}}
+    \cventry{Data Analytics Intern}{Fifth Wheel Freight}{Kentwood, MI}{May 2019 - Aug 2019}{\begin{cvitems}
+\item Interpreted data, analyze results using statistical techniques and provide ongoing reports 
+\item Developed and implement databases, data collection systems, data analytics and other strategies that optimize statistical efficiency and quality
+\item Identified, analyzed, and interpreted trends or patterns in complex data sets
+\item Filtered and “cleaned” data by reviewing computer reports, printouts, and performance indicators to locate and correct code problems
+\item Worked with management to prioritize business and information needs
+\item Located and defined new process improvement opportunities
+\end{cvitems}}
+    \cventry{Nurse Technician}{Butterworth Hospital - Spectrum}{Grand Rapids, MI}{September 2018 - November 2018}{\begin{cvitems}
+\item Obtained vital signs and reported any abnormalities or changes in patients’ condition and behavior
+\item Assessed patients with daily activities and providing dietary and hygienic care
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{research-experience}{%
+\section{Research Experience}\label{research-experience}}
+
+\footnotesize
+
+My research experience contains a personal project and an assisted
+project.
+
+\begin{cventries}
+    \cventry{Primary Researcher - COVID-19 Predictive Data Analysis}{Grand Valley State University}{Allendale, MI}{Oct 2020 - Present}{\begin{cvitems}
+\item Objective: To use predictive analytic models to create a risk forecast of COVID-19 for GVSU, using test result data from Trident Labs.
+\item Visualizations are created using R Studio.
+\end{cvitems}}
+    \cventry{Research Assistant - FEV 1.0 and Lung Capacity in Band Students (by Dr. Deborah Lown and Trenton Dalm, GVSU student)}{Grand Valley State University}{Allendale, MI}{June 2019 - Apr 2020}{\begin{cvitems}
+\item Objective: To test the effectiveness of the pulmonary exercises taught by Breathing Gym on functional lung capacity and FEV 1.0 in Grand Valley State University marching band students.
+\item My responsibilities included the following: Assisted with data collection using spirometers and weight/height measuring tools, analyzed and organized data to find trends over the semester, provided insight on conclusions
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{awards-achievements}{%
+\section{Awards \& Achievements}\label{awards-achievements}}
+
+\hypertarget{scholarships}{%
+\subsection{Scholarships}\label{scholarships}}
+
+\begin{cvhonors}
+    \cvhonor{}{GV Laker Scholarship}{GVSU}{2017-2020}
+    \cvhonor{}{Statistics Book Scholarship}{GVSU - Statistics Department}{2019 \& 2020}
+    \cvhonor{}{Believe in Yourself Scholarship}{SJPS Foundation}{2017}
+\end{cvhonors}
+
+\hypertarget{citation}{%
+\section{Citation}\label{citation}}
+
+\textbf{Citation}: This resume was created by using this
+\href{https://github.com/mitchelloharawild/CV.git}{Curriculum Vitae
+Github Repository} as a source.
+
+\end{document}

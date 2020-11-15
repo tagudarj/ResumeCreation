@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = FALSE)
 # Education
 ```{r education}
 tribble(
-  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  ~ degree, ~ school, ~ location, ~ dates, ~ details,
   "BS in Allied Health Sciences", "Grand Valley State University", "Allendale, MI", "Aug. 2017 - April 2020", "Major: Allied Health Sciences; Minor: Applied Statistics",
   "BS in Allied Health Sciences", "Grand Valley State University", "Allendale, MI", "Aug. 2017 - April 2020", "Overall GPA: 3.4",
   "BS in Allied Health Sciences", "Grand Valley State University", "Allendale, MI", "Aug. 2017 - April 2020", "Applied Statistics GPA: 3.9",
@@ -33,7 +33,7 @@ tribble(
   "MS in Biostatistics", "Grand Valley State University", "Grand Rapids, MI", "Aug. 2020 - Present", "Related Coursework: R Programming, Bioinformatics, Applied Statistics for Health Professions",
   "MS in Biostatistics", "Grand Valley State University", "Grand Rapids, MI", "Aug. 2020 - Present", "Interests: Biostatistics, Data Analytics, Research, Epidemiology"
 ) %>% 
-  detailed_entries(degree, dates, uni, loc, details)
+  detailed_entries(degree, dates, school, location, details)
 ```
 
 # Relevant Skills
@@ -42,7 +42,7 @@ tribble(
 I developed a variety of skills through coursework and work experience.
 
 
-```{r workshops}
+```{r skills}
 tribble(
   ~ skill, ~space, ~space2,
   "SAS", " ", " ",
@@ -61,10 +61,10 @@ tribble(
 
 ```{r work}
 tribble(
-  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  ~ job, ~ company, ~ location, ~ dates, ~ details,
   "Resesarch Administrtion Graduate Assistant", "Center for Scholarly and Creative Excellence - GVSU", "Allendale, MI", "Aug 2020 - Present", "COVID-19 Research",
   "Resesarch Administrtion Graduate Assistant", "Center for Scholarly and Creative Excellence - GVSU", "Allendale, MI", "Aug 2020 - Present", "Managing COVID-19 Testing Facility",
-  "Resesarch Administrtion Graduate Assistant", "Center for Scholarly and Creative Excellence - GVSU", "Allendale, MI", "Aug 2020 - Present", "Assist with Office of Sponsored Programs with monitoring contracts and other duties",
+  "Resesarch Administrtion Graduate Assistant", "Center for Scholarly and Creative Excellence - GVSU", "Allendale, MI", "Aug 2020 - Present", "Assist with Office of Sponsored Programs by monitoring contracts and other duties",
   "Resesarch Administrtion Student Assistant", "Center for Scholarly and Creative Excellence - GVSU", "Allendale, MI", "November 2018 - April 2020", "Collected and converted data to and from various databases",
   "Resesarch Administrtion Student Assistant", "Center for Scholarly and Creative Excellence - GVSU", "Allendale, MI", "November 2018 - April 2020", "Data analyzing and data cleaning",
   "Resesarch Administrtion Student Assistant", "Center for Scholarly and Creative Excellence - GVSU", "Allendale, MI", "November 2018 - April 2020", "Prepared the company for a new software launch by organizing research projects from 2011 to 2020",
@@ -80,7 +80,7 @@ tribble(
   "Nurse Technician", "Butterworth Hospital - Spectrum", "Grand Rapids, MI", "September 2018 - November 2018", "Obtained vital signs and reported any abnormalities or changes in patients’ condition and behavior",
    "Nurse Technician", "Butterworth Hospital - Spectrum", "Grand Rapids, MI", "September 2018 - November 2018", "Assessed patients with daily activities and providing dietary and hygienic care",
 ) %>% 
-  detailed_entries(role, dates, company, loc, details)
+  detailed_entries(job, dates, company, location, details)
 ```
 
 # Research Experience
@@ -89,21 +89,21 @@ tribble(
 My research experience contains a personal project and an assisted project.
 
 
-```{r tutoring}
+```{r research}
 tribble(
-  ~ role, ~ uni, ~ campus, ~ dates, ~ details,
+  ~ role, ~ school, ~ location, ~ dates, ~ details,
   "Primary Researcher - COVID-19 Predictive Data Analysis", "Grand Valley State University", "Allendale, MI", "Oct 2020 - Present", "Objective: To use predictive analytic models to create a risk forecast of COVID-19 for GVSU, using test result data from Trident Labs.",
   "Primary Researcher - COVID-19 Predictive Data Analysis", "Grand Valley State University", "Allendale, MI", "Oct 2020 - Present", "Visualizations are created using R Studio.",
   "Research Assistant - FEV 1.0 and Lung Capacity in Band Students (by Dr. Deborah Lown and Trenton Dalm, GVSU student)", "Grand Valley State University", "Allendale, MI", "June 2019 - Apr 2020", "Objective: To test the effectiveness of the pulmonary exercises taught by Breathing Gym on functional lung capacity and FEV 1.0 in Grand Valley State University marching band students.",
     "Research Assistant - FEV 1.0 and Lung Capacity in Band Students (by Dr. Deborah Lown and Trenton Dalm, GVSU student)", "Grand Valley State University", "Allendale, MI", "June 2019 - Apr 2020", "My responsibilities included the following: Assisted with data collection using spirometers and weight/height measuring tools, analyzed and organized data to find trends over the semester, provided insight on conclusions",
 ) %>% 
-  detailed_entries(role, dates, uni, campus, details)
+  detailed_entries(role, dates, school, location, details)
 ```
 
 
 # Awards & Achievements
 ## Scholarships 
-```{r}
+```{r scholarships}
 tribble( 
 ~ scholarship, ~ from, ~ year, 
 "GV Laker Scholarship", "GVSU", "2017-2020", 
@@ -114,4 +114,4 @@ brief_entries(scholarship, year, from)
 ``` 
 
 # Citation
-**Citation**: This resume was created by using this [Curriculum Vitae Github Repository](https://github.com/mitchelloharawild/CV.git) as a source.
+**Citation**: This resume was created by using this [**Curriculum Vitae Github Repository Link**](https://github.com/mitchelloharawild/CV.git) as a source.
