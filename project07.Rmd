@@ -1,0 +1,117 @@
+---
+name: Jessica Tagudar
+date: "`r format(Sys.time(), '%B, %Y')`"
+qualifications: Allied Health Sciences, BS
+position: Research Administration Graduate Assistant
+address: Grand Rapids, Michigan
+phone: 269-408-6153
+email: tagudarjessica@gmail.com
+github: tagudarj
+linkedin: jessica-tagudar-a10938179
+headcolor: "121212"
+output: 
+    vitae::awesomecv:
+      keep_tex: true
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Education
+```{r education}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "BS in Allied Health Sciences", "Grand Valley State University", "Allendale, MI", "Aug. 2017 - April 2020", "Major: Allied Health Sciences; Minor: Applied Statistics",
+  "BS in Allied Health Sciences", "Grand Valley State University", "Allendale, MI", "Aug. 2017 - April 2020", "Overall GPA: 3.4",
+  "BS in Allied Health Sciences", "Grand Valley State University", "Allendale, MI", "Aug. 2017 - April 2020", "Applied Statistics GPA: 3.9",
+  "BS in Allied Health Sciences", "Grand Valley State University", "Allendale, MI", "Aug. 2017 - April 2020", "Dean’s List: 2019, 2020",
+  "BS in Allied Health Sciences", "Grand Valley State University", "Allendale, MI", "Aug. 2017 - April 2020", "Related Coursework: Statistical Quality Control, Intermediate Applied Statistics, Design of Experiments, Introduction to Biostatistics, Regression Analysis, Statistical Computing, Introduction to Health Care Research",
+  "MS in Biostatistics", "Grand Valley State University", "Grand Rapids, MI", "Aug. 2020 - Present", "Expected Graduation: April 2022",
+  "MS in Biostatistics", "Grand Valley State University", "Grand Rapids, MI", "Aug. 2020 - Present", "Related Coursework: R Programming, Bioinformatics, Applied Statistics for Health Professions",
+  "MS in Biostatistics", "Grand Valley State University", "Grand Rapids, MI", "Aug. 2020 - Present", "Interests: Biostatistics, Data Analytics, Research, Epidemiology"
+) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+# Relevant Skills
+
+\footnotesize
+I developed a variety of skills through coursework and work experience.
+
+
+```{r workshops}
+tribble(
+  ~ skill, ~space, ~space2,
+  "SAS", " ", " ",
+  "R Studio", " ", " ",
+  "SPSS", " ", " ", 
+  "JMP Pro 14", " ", " ",
+  "Proficient in Microsoft programs, specifically Excel tools such as Pivot Tables", " ", " ",
+  "Data collection and data transferring to/from various software", " ", " ",
+  "Data software such as Cayuse and Streamlyne", " ", " ",
+  "Phlebotomy Technician Certified", " ", " ",
+) %>% 
+  brief_entries(skill, space, space2)
+```
+
+# Work Experience
+
+```{r work}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Resesarch Administrtion Graduate Assistant", "Center for Scholarly and Creative Excellence - GVSU", "Allendale, MI", "Aug 2020 - Present", "COVID-19 Research",
+  "Resesarch Administrtion Graduate Assistant", "Center for Scholarly and Creative Excellence - GVSU", "Allendale, MI", "Aug 2020 - Present", "Managing COVID-19 Testing Facility",
+  "Resesarch Administrtion Graduate Assistant", "Center for Scholarly and Creative Excellence - GVSU", "Allendale, MI", "Aug 2020 - Present", "Assist with Office of Sponsored Programs with monitoring contracts and other duties",
+  "Resesarch Administrtion Student Assistant", "Center for Scholarly and Creative Excellence - GVSU", "Allendale, MI", "November 2018 - April 2020", "Collected and converted data to and from various databases",
+  "Resesarch Administrtion Student Assistant", "Center for Scholarly and Creative Excellence - GVSU", "Allendale, MI", "November 2018 - April 2020", "Data analyzing and data cleaning",
+  "Resesarch Administrtion Student Assistant", "Center for Scholarly and Creative Excellence - GVSU", "Allendale, MI", "November 2018 - April 2020", "Prepared the company for a new software launch by organizing research projects from 2011 to 2020",
+  "Resesarch Administrtion Student Assistant", "Center for Scholarly and Creative Excellence - GVSU", "Allendale, MI", "November 2018 - April 2020", "Ensured that finished research projects contain all of their necessary documents to secure their completion – such as budget forms and fully executed contracts",
+  "Resesarch Administrtion Student Assistant", "Center for Scholarly and Creative Excellence - GVSU", "Allendale, MI", "November 2018 - April 2020", "Attended conference calls to stay on track with other companies for the launch of our new software",
+  "Resesarch Administrtion Student Assistant", "Center for Scholarly and Creative Excellence - GVSU", "Allendale, MI", "November 2018 - April 2020", "Prepared learning modules directed toward faculty and staff to learn about the new software",
+  "Data Analytics Intern", "Fifth Wheel Freight", "Kentwood, MI", "May 2019 - Aug 2019", "Interpreted data, analyze results using statistical techniques and provide ongoing reports ",
+   "Data Analytics Intern", "Fifth Wheel Freight", "Kentwood, MI", "May 2019 - Aug 2019", "Developed and implement databases, data collection systems, data analytics and other strategies that optimize statistical efficiency and quality",
+   "Data Analytics Intern", "Fifth Wheel Freight", "Kentwood, MI", "May 2019 - Aug 2019", "Identified, analyzed, and interpreted trends or patterns in complex data sets",
+   "Data Analytics Intern", "Fifth Wheel Freight", "Kentwood, MI", "May 2019 - Aug 2019", "Filtered and “cleaned” data by reviewing computer reports, printouts, and performance indicators to locate and correct code problems",
+   "Data Analytics Intern", "Fifth Wheel Freight", "Kentwood, MI", "May 2019 - Aug 2019", "Worked with management to prioritize business and information needs",
+   "Data Analytics Intern", "Fifth Wheel Freight", "Kentwood, MI", "May 2019 - Aug 2019", "Located and defined new process improvement opportunities",
+  "Nurse Technician", "Butterworth Hospital - Spectrum", "Grand Rapids, MI", "September 2018 - November 2018", "Obtained vital signs and reported any abnormalities or changes in patients’ condition and behavior",
+   "Nurse Technician", "Butterworth Hospital - Spectrum", "Grand Rapids, MI", "September 2018 - November 2018", "Assessed patients with daily activities and providing dietary and hygienic care",
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+# Research Experience
+
+\footnotesize
+My research experience contains a personal project and an assisted project.
+
+
+```{r tutoring}
+tribble(
+  ~ role, ~ uni, ~ campus, ~ dates, ~ details,
+  "Primary Researcher - COVID-19 Predictive Data Analysis", "Grand Valley State University", "Allendale, MI", "Oct 2020 - Present", "Objective: To use predictive analytic models to create a risk forecast of COVID-19 for GVSU, using test result data from Trident Labs.",
+  "Primary Researcher - COVID-19 Predictive Data Analysis", "Grand Valley State University", "Allendale, MI", "Oct 2020 - Present", "Visualizations are created using R Studio.",
+  "Research Assistant - FEV 1.0 and Lung Capacity in Band Students (by Dr. Deborah Lown and Trenton Dalm, GVSU student)", "Grand Valley State University", "Allendale, MI", "June 2019 - Apr 2020", "Objective: To test the effectiveness of the pulmonary exercises taught by Breathing Gym on functional lung capacity and FEV 1.0 in Grand Valley State University marching band students.",
+    "Research Assistant - FEV 1.0 and Lung Capacity in Band Students (by Dr. Deborah Lown and Trenton Dalm, GVSU student)", "Grand Valley State University", "Allendale, MI", "June 2019 - Apr 2020", "My responsibilities included the following: Assisted with data collection using spirometers and weight/height measuring tools, analyzed and organized data to find trends over the semester, provided insight on conclusions",
+) %>% 
+  detailed_entries(role, dates, uni, campus, details)
+```
+
+
+# Awards & Achievements
+## Scholarships 
+```{r}
+tribble( 
+~ scholarship, ~ from, ~ year, 
+"GV Laker Scholarship", "GVSU", "2017-2020", 
+"Statistics Book Scholarship", "GVSU - Statistics Department", "2019 & 2020", 
+"Believe in Yourself Scholarship", "SJPS Foundation", "2017"
+) %>%
+brief_entries(scholarship, year, from) 
+``` 
+
+# Citation
+**Citation**: This resume was created by using this [Curriculum Vitae Github Repository](https://github.com/mitchelloharawild/CV.git) as a source.
